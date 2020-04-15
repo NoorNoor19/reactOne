@@ -1,20 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const Hello = (props) => {
+const App = () => {
+  const course = {
+   name: 'Half Stack application development',
+   parts :[
+  { name:'Fundamentals of React',
+   exercise :10 },
+
+  { name : 'Using props to pass data',
+   exercises: 7 },
+
+  { name:'State of a component',
+   exercise: 14 }
+  ]
+  }
   return (
-    <p>Hello {props.name}, today you are {props.age} years old!</p>
+    <div>
+      
+    </div>
   )
 }
-const App = () => {
-  const name = "Firdous";
-  const age = 19;
-  return (
-  <div>
-    <Hello name= "Mahnoor" age = "19"/>
-    <Hello name= {name} age= {age}/>
-  </div>
-  )
-  }
 
 ReactDOM.render(<App />, document.getElementById('root'))
